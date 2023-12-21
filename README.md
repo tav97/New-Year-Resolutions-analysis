@@ -1,6 +1,6 @@
 # New-Year-Resolutions-analysis
 
-**R Code for analysis**
+# R Code for analysis
 
 **Install and load necessary packages**
 install.packages("ggplot2")
