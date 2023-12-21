@@ -1,4 +1,13 @@
-# New-Year-Resolutions-analysis
+# Unveiling New Year Resolutions Trends Through Data Analytics
+
+# Technologies Used
+R, R studio
+# Approach for analysis
+Exploring the Tweet Categories:
+1) To start, I visualized the popularity of different New Year resolution categories using a pie chart. 
+2) Analyzing the gender distribution of tweets revealed that out of the 4723 tweets, 2367 tweets were posted by females, and 2356 tweets were posted by males.
+3) I delved into retweet trends across different categories. Finance, Family/Friends/Relationships, and Personal Growth emerged as the categories with the highest number of retweets.
+4) I explored tweet distribution across regions. The bar chart provides a glimpse into the number of tweets originating from different regions. 
 
 # R Code for analysis
 
