@@ -29,3 +29,9 @@ pie_chart <- ggplot(data, aes(x = "", y = sizes, fill = labels)) +
 **Display the pie chart with values outside**
 print(pie_chart)
 ![image](https://github.com/tav97/New-Year-Resolutions-analysis/assets/151886105/ee5264f3-bbc7-4fdd-b59c-708a16b0c052)
+
+**examine the popularity of categories according to gender**
+New_years_resolutions %>% 
+  count(user_gender)
+![image](https://github.com/tav97/New-Year-Resolutions-analysis/assets/151886105/d20d883f-fa3a-4dd5-a0f9-550ab61176ea)
+
