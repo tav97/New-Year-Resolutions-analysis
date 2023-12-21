@@ -35,3 +35,28 @@ New_years_resolutions %>%
   count(user_gender)
 ![image](https://github.com/tav97/New-Year-Resolutions-analysis/assets/151886105/d20d883f-fa3a-4dd5-a0f9-550ab61176ea)
 
+To analyze the popularity of tweet categories based on retweets, 
+I utilized the matplotlib library to create a straightforward bar chart. The code and resulting output are as follows:
+
+**Summarize retweet count by category**
+newyear_summary <- New_years_resolutions %>% 
+  group_by(tweet_category) %>%
+  summarize(retweets = sum(retweet_count))
+
+**Check if any NA values**
+sum(is.na(New_years_resolutions$retweet_count))
+**Alternative aggregation**
+newyear_summary <- New_years_resolutions %>%
+  group_by(tweet_category) %>%
+  summarize(retweets = mean(retweet_count, na.rm = TRUE))
+
+**Plot** 
+ggplot(newyear_summary, aes(x=retweets, y=tweet_category)) + 
+  geom_col(fill="maroon") +
+  labs(x="Sum of Retweets", 
+       y="Categories",
+       title="Sum of Retweets By Categories")
+
+![image](https://github.com/tav97/New-Year-Resolutions-analysis/assets/151886105/bafc509c-5ea0-4958-bab9-4d921344918e)
+
+
