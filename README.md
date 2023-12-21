@@ -59,4 +59,18 @@ ggplot(newyear_summary, aes(x=retweets, y=tweet_category)) +
 
 ![image](https://github.com/tav97/New-Year-Resolutions-analysis/assets/151886105/bafc509c-5ea0-4958-bab9-4d921344918e)
 
+**Here I analysed the popularity region wise**
+
+library(ggplot2)
+library(RColorBrewer)
+Map tweet_region to the x-axis in aes(),Used geom_bar() function to create bars, Color based on tweet_region grouped values and then set the viridis palette
+Added a title with ggtitle anchored in the middle
+
+ggplot(New_years_resolutions, aes(x=tweet_region)) +
+  geom_bar(aes(fill=tweet_region), color="black") + 
+  scale_fill_brewer(palette = "viridis") +
+  ggtitle("Number of tweets by different region") +
+  theme(plot.title = element_text(hjust = 0.5))
+![image](https://github.com/tav97/New-Year-Resolutions-analysis/assets/151886105/6de7e51f-2925-428d-938e-c3ce2d55adaf)
+
 
